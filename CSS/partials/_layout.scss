@@ -1,0 +1,19 @@
+.container-main{
+    border: 1px solid red;
+    max-width: 1440px;
+    margin: 0 auto; 
+    padding: 36px 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-01{
+    max-width: 576px;
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.container-02{
+    border: 1px solid green;
+}
