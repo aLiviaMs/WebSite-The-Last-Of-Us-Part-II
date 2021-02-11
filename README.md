@@ -4,4 +4,4 @@
 The proposal was to develop a page with the theme of The Last Of Us. The project focused on developing a Ui Concept and Layout Coding created using the most current technologies. Finally, animations were created that makeup MOTION Design.
 
 <h1>Preview</h1>
-<img src="preview.gif"/>
+<img src="video/preview.gif"/>
