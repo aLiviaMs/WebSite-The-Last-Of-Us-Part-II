@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last of Us Part 2 || PS4 & PS5</title>
+    <script src="JS/svg-inject.min.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <section class="bg-loader">
+        <svg style="max-width: 344px;" viewBox="0 0 643 471" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="logo-fireflies">
+            <path class="logo-fireflies" fill-rule="evenodd" clip-rule="evenodd" d="M7.33299 38L0.666992 54.333L70.333 123.333L82.333 124.667L283 80L283.333 94.333L117.333 157.333V169L194 205.667L205 206.333L308.667 94.333L308.333 32.667L267 0L289.667 38H7.33299Z M635.999 38L642.666 54.333L573 123.333L561 124.667L360.333 80L360 94.333L526 157.333V169L449.333 205.667L438.333 206.333L334.667 94.333L334.999 32.667L376.333 0L353.666 38H635.999Z M277.333 159L202.666 246.667L204.999 249.667L274.333 198L277 200.667L241 298.334L243 299.667L282 243.667L282.333 420.334L308 470.667V200.667C308 200.667 278.667 193.333 277.333 159Z M365.332 159L440 246.667L437.666 249.667L368.332 198L365.666 200.667L401.666 298.334L399.666 299.667L360.666 243.667L360.332 420.334L334.666 470.667V200.667C334.666 200.667 364 193.333 365.332 159Z" fill="#EED12F" stroke="#EED12F" stroke-width="0.3" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+        </svg>
+    </section>
+    <header>
+        <nav class="navbar">
+            <div class="nav-menu">
+                <div class="logo">
+                    <a href=""><img style="max-width: 96px;" src="Images/NaughtyLogo1.svg" onload="SVGInject(this)" /></a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="" class="nav-link" >Home</a></li>
+                    <li><a href="" class="nav-link" >Story</a></li>
+                    <li><a href="" class="nav-link" id="nav-wallpaper">Wallpapers</a></li>
+                    <li><a href="" class="nav-link" id="nav-long">#Endureandsurvive</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <img src="Images/icon-facebook.svg" onload="SVGInject(this)" />
+                <img src="Images/instagram.svg" onload="SVGInject(this)" />
+                <img src="Images/youtube.svg" onload="SVGInject(this)" />
+                <img src="Images/twitter.svg" class="mr-2" onload="SVGInject(this)" />
+            </div>
+        </nav>
+    </header>
+
+    <!--======== BG-VIDEO ===========-->
+    <section class="bg-video">
+        <video class="video" preload="none" autoplay muted loop>
+            <source src="video/The Last of Us Part II.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!--======== BG-LINES ===========-->
+    <section class="bg-lines">
+        <img src="" onload="SVGInject(this)" />
+    </section>
+
+    <!--======== CONTAINER ===========-->
+    <section class="container">
+        <div class="container-01">
+            <p class="px-1 item-1">
+                <img src="Images/thelastofus-logo.svg" onload="SVGInject(this)" />
+            </p>
+            
+            <p class="my-2 item-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus, diam id purus fermentum, eleifend accumsan donec. Sem viverra orci non, mattis viverra facilisi feugiat feugiat mi. Velit amet pharetra, ac massa porttitor arcu odio. Donec id nascetur elementum a.
+            </p>
+            <p class="mt-1 flex item-3">
+                <span><a href="" class="btn">Order now</a></span>
+                <span><a href="" class="ml-2 btn-secondary" id="reverse">watch the trailer</a></span>
+            </p>
+        </div>
+        <div class="container-02 item-5">
+            <div class="js-tilt">
+                <img src="Images/elliebg.png" class="ellie" onload="SVGInject(this)" />
+            </div>
+            
+            
+        </div>
+        
+    </section>
+
+
+
+    <!--========== JS ==========-->
+    <script src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script>
+
+      $('.js-tilt').tilt({
+        perspective: 2200
+    });
+    </script>
+</body>
+</html>

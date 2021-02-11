@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
 
-@import '../CSS/partials/animations';
-@import '../CSS/partials/colors';
-@import '../CSS/partials/layout';
-@import '../CSS/partials/menu';
-
 *, *::after, *::before{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Mukta', sans-serif;
 }
+
+@import 'partials/colors';
+@import 'partials/spacing';
 
 body{
     width: 100%;
@@ -32,3 +30,8 @@ p{
     font-size: 18px;
     color: $white-primary;
 }
+
+@import 'partials/layout';
+@import 'partials/menu';
+@import 'partials/buttons';
+@import 'partials/animations';

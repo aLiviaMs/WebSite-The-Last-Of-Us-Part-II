@@ -1,18 +1,23 @@
 header{
     width: 100%;
-    padding: 25px 96px;
+    position: fixed;
+    z-index: 800;
+    padding-top: 16px;
 }
 
 .navbar{
-    max-width: 1440px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .nav-menu{
     display: flex;
+    justify-content: start;
     align-items: center;
+    margin-left: 16px;
 }
 
 .nav-list{
@@ -27,14 +32,19 @@ header{
 .nav-link{
     display: inline-block;
     text-decoration: none;
-    padding: 5px 15px;
+
+    font-size: 14px;
     letter-spacing: 2px;
+    font-weight: 200;
+
+    padding: 8px 16px;
+
+    color: $white-dark;
+
     text-transform: uppercase;
     transition: all .7s ease;
-    font-weight: 200;
-    color: $white-dark;
-    position: relative;
 
+    position: relative;
     &::after{
         content: '';
         display: block;
@@ -56,6 +66,16 @@ header{
         }
     }
 }
+#nav-wallpaper{
+    &:hover{
+        color: $white-primary;
+        transition: 0.7s ease;
+
+        &::after{
+            width: 99px;
+        }
+    }
+}
 #nav-long{
     color: $yellow-light;
 
@@ -64,7 +84,7 @@ header{
         transition: 0.7s ease;
 
         &::after{
-            width: 190px;
+            width: 180px;
         }
     }
 }
@@ -73,6 +93,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 40px;
 
     svg{
         margin-left: 20px;

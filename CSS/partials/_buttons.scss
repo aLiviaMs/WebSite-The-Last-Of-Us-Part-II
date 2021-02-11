@@ -1,0 +1,127 @@
+.btn{
+    display: inline-flex;
+    background: linear-gradient(267.72deg, #000 0.88%, rgb(15, 15, 15) 100%);
+    border-radius: 3px;
+
+    padding: 12px 32px;
+    text-transform: uppercase;
+
+    transform: skewX(-10deg);
+    transition: .7s ease;
+    
+    position: relative;
+    margin-right: 30px;
+
+    color: $yellow-primary;
+    font-weight: bold;
+
+    &::after{
+        content: '';
+        position: absolute;
+        display: block;
+        top: -2px;
+        left: -2px;
+
+        border-radius: 3px;
+        opacity: 0;
+
+        width: 20%;
+        height: 70%;
+        z-index: -1;
+
+        border-top: 3px solid $yellow-dark;
+        border-left: 3px solid $yellow-dark;
+
+        transition: .7s ease;
+    }
+
+    &::before{
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: -2px;
+        right: -2px;
+
+        border-radius: 3px;
+        opacity: 0;
+
+        width: 20%;
+        height: 70%;
+        z-index: -1;
+
+        border-bottom: 3px solid $yellow-dark;
+        border-right: 3px solid $yellow-dark;
+
+        transition: .7s ease;
+    }
+
+    &:hover{
+        box-shadow: 0px 14px 85px rgba(245, 227, 146, 0.06), 
+        0px 5.11023px 31.0264px rgba(245, 243, 124, 0.041), 
+        0px 2.48092px 15.0627px rgba(240, 204, 42, 0.033), 
+        0px 1.21619px 7.38404px rgba(241, 239, 120, 0.027), 
+        0px 0.480885px 2.91966px rgba(242, 255, 168, 0.019);
+
+        transform: scale(1.05) skewX(-10deg);
+
+        &::after{
+            opacity: 1;
+            top: -2px;
+            left: -2px;
+        }
+        &::before{
+            opacity: 1;
+            bottom: -2px;
+            right: -2px;
+        }
+    }
+}
+.btn-secondary{
+    margin-top: 50px;
+    color: $yellow-primary;
+    font-weight: bold;
+    display: inline-flex;
+    background: transparent;
+    border-radius: 3px;
+    border: 2px solid $yellow-dark;
+    margin-left: 140px;
+
+    padding: 10px 32px;
+    text-transform: uppercase;
+
+    transform: skewX(-10deg);
+    transition: .7s ease;
+
+    overflow: hidden;
+    
+    position: relative;
+
+    &::after{
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        left: -5px;
+        
+        background: linear-gradient(267.72deg, #000 0.88%, rgb(15, 15, 15) 100%);
+        border-radius: 3px;
+
+        width: 0%;
+        height: 110%;
+        z-index: -1;
+
+        transition: .7s ease;
+    }
+
+
+    &:hover{
+        box-shadow: 0px 14px 85px rgba(113, 121, 14, 0.06);
+        transform: scale(1.05) skewX(-10deg);
+
+        &::after{
+            opacity: 1;
+            width: 120%;
+        }
+    }
+
+}
